@@ -107,6 +107,21 @@ const experience = [
 
 const projects = [
   {
+    title: "Technical Portfolio Website (Live Deployment)",
+    org: "Personal Project",
+    tags: ["React", "Vite", "Tailwind CSS", "Framer Motion", "GitHub", "Vercel"],
+    bullets: [
+      "Designed and developed a fully responsive portfolio to showcase QA, performance engineering, and distributed systems expertise.",
+      "Implemented animated UI components using Framer Motion to enhance user engagement and professional presentation.",
+      "Integrated contact actions (mailto, tel), external profile linking (LinkedIn, GitHub), and structured impact metrics.",
+      "Deployed a production-ready build through a GitHub-based workflow and Vercel hosting.",
+    ],
+    links: {
+      live: "https://yasogreeshma-portfolio.vercel.app",
+      code: "https://github.com/greeshmaneelathi/yasogreeshma-portfolio",
+    },
+  },
+  {
     title: "Math Kids with Rabbit (Mobile Game)",
     org: "CSU San Bernardino",
     tags: ["C++", "Mobile", "Performance", "UX"],
@@ -136,6 +151,7 @@ const projects = [
     ],
   },
 ];
+
 
 function Pill({ children }) {
   return (
@@ -465,9 +481,29 @@ export default function App() {
                     ))}
                   </ul>
 
-                  <div className="mt-5 text-sm text-neutral-500">
-                    (Optional) Add Demo + Code links later
-                  </div>
+                  {p.links ? (
+  <div className="mt-5 flex flex-wrap gap-3">
+    <a
+      href={p.links.live}
+      target="_blank"
+      rel="noreferrer"
+      className="rounded-2xl bg-neutral-900 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-neutral-800 transition-transform duration-200 hover:-translate-y-0.5"
+    >
+      Live
+    </a>
+    <a
+      href={p.links.code}
+      target="_blank"
+      rel="noreferrer"
+      className="rounded-2xl border border-neutral-200 bg-white px-4 py-2 text-sm font-semibold text-neutral-900 shadow-sm hover:bg-neutral-50 transition-transform duration-200 hover:-translate-y-0.5"
+    >
+      Code
+    </a>
+  </div>
+) : (
+  <div className="mt-5 text-sm text-neutral-500">(Optional) Add Demo + Code links later</div>
+)}
+
                 </motion.div>
               ))}
             </div>
