@@ -1,11 +1,26 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+/**
+ * ✅ Update these links (only if needed)
+ * NOTE: Replace Math Kids repo placeholder with your real repo URL.
+ */
 const links = {
   email: "mailto:yneelathi0511@gmail.com",
+  phone: "tel:+19093806984",
   linkedin: "https://www.linkedin.com/in/yaso-greeshma-n-33783414b/",
   github: "https://github.com/greeshmaneelathi",
-  resume: "https://drive.google.com/drive/folders/1jqEcLyQIuGoiGt4lcVi0YPvvVxcq41iG",
+  resume:
+    "https://drive.google.com/drive/folders/1jqEcLyQIuGoiGt4lcVi0YPvvVxcq41iG",
+
+  // Your live portfolio
+  portfolioLive: "https://yasogreeshma-portfolio.vercel.app",
+
+  // This repo (portfolio code) - if you want a direct repo link
+  portfolioCode: "https://github.com/greeshmaneelathi/yasogreeshma-portfolio",
+
+  // ✅ REPLACE THIS with your real Math Kids repo URL
+  mathKidsCode: "https://github.com/greeshmaneelathi/REPLACE_WITH_MATH_KIDS_REPO",
 };
 
 const stats = [
@@ -18,41 +33,14 @@ const stats = [
 ];
 
 const skills = {
-  "Quality Engineering": [
-    "Automation Testing",
-    "Manual Testing",
-    "Functional Testing",
-    "Regression Testing",
-    "Integration Testing",
-    "System Testing",
-    "Performance Testing",
-    "Reliability Testing",
-    "Exploratory Testing",
-    "Bug Tracking",
-  ],
-  "Test Automation": ["Automation Framework Design", "API Automation", "Mobile Testing", "CI/CD Integration"],
-  Programming: ["Python", "Java", "C++", "C#", "Go", "SQL", "JavaScript"],
-  "Cloud & DevOps": [
-    "AWS (EC2, Lambda, CloudFront)",
-    "Docker",
-    "Kubernetes",
-    "CI/CD",
-    "Jenkins",
-    "Git",
-    "GitHub",
-    "Google Cloud Platform",
-  ],
-  "Monitoring & Debugging": [
-    "Splunk",
-    "AppDynamics",
-    "Dynatrace",
-    "Datadog",
-    "Prometheus",
-    "Log Analysis",
-    "Root Cause Analysis",
-  ],
-  Tools: ["Jira", "Confluence", "Salesforce", "Azure DevOps", "Visual Studio", "Microsoft Excel"],
-  Methodologies: ["Agile", "Scrum", "SDLC", "Waterfall"],
+  Programming: ["Java", "Python", "SQL", "JavaScript"],
+  "Automation Frameworks": ["Selenium WebDriver", "TestNG", "JUnit", "REST Assured"],
+  "API Testing": ["REST API validation", "API stubbing (CA LISA)", "Postman"],
+  "Performance Engineering": ["JMeter", "LoadRunner", "Load/Stress/Endurance Testing"],
+  "Monitoring & Debugging": ["Splunk", "AppDynamics", "Dynatrace", "Root Cause Analysis"],
+  "CI/CD & DevOps": ["Jenkins", "GitHub Actions", "Docker", "Git"],
+  Architecture: ["Microservices", "Distributed Systems", "JVM tuning", "Garbage Collection"],
+  Databases: ["MySQL", "Query Optimization", "Indexing"],
 };
 
 const experience = [
@@ -60,47 +48,56 @@ const experience = [
     company: "AVEVA",
     location: "California",
     role: "Software Developer & Quality Assurance Engineer",
-    dates: "Jun 2025 – Sept 2025",
+    dates: "Jun 2025 – Present",
     highlights: [
-      "Led requirements and quality documentation (SRS, traceability) aligned to internal standards and regulated development expectations.",
-      "Reviewed code and assessed test and performance data to validate reliability, usability, and system performance requirements.",
-      "Performed root cause analysis on production issues; implemented process improvements reducing recurring defects by 30%.",
-      "Validated design inputs across reliability, performance, data integrity, and security requirements; supported risk assessments and quality plans across the lifecycle.",
+      "Validated backend microservices and REST APIs powering AVEVA Connect Visualization Services, supporting high availability and W3C-aligned standards.",
+      "Designed test planning strategies for real-time telemetry ingestion and data aggregation workflows to ensure visualization accuracy in Scrum teams.",
+      "Tested distributed data processing services handling high-volume industrial telemetry streams under Agile development workflows.",
+      "Identified and reproduced intermittent API timeouts and data synchronization issues in staging, improving reliability and release confidence.",
+      "Partnered with engineers during sprint planning to improve testability and reduce ambiguity in functional requirements.",
+      "Strengthened regression stability by formalizing API validation scenarios and system testing; improved defect traceability documentation and reporting.",
     ],
   },
   {
     company: "San Bernardino County",
     location: "California",
-    role: "Software Development & QA",
+    role: "Software Developer & QA",
     dates: "Feb 2025 – Apr 2025",
     highlights: [
-      "Supported documentation and review of software design inputs to improve traceability and lifecycle compliance.",
-      "Performed validation testing and data verification to support release readiness for public-sector systems.",
-      "Contributed to quality plans and risk mitigation documentation; collaborated cross-functionally on reliability and performance criteria.",
-      "Used Apache JMeter during test planning and performance validation.",
+      "Tested modernization of legacy government applications upgraded to Angular (front end) and ASP.NET Web API (backend), focusing on post-production QA and accessibility.",
+      "Designed and executed functional, regression, and integration scenarios for customer-facing platforms supporting enrollment, staff management, scheduling, and billing workflows.",
+      "Performed end-to-end API validation for ASP.NET Web API services, verifying request/response payloads and backend business logic.",
+      "Conducted SQL-based database validation to ensure data integrity across enrollment and financial transaction modules.",
+      "Executed cross-browser testing for Angular UI components to validate responsiveness and usability improvements.",
+      "Validated performance improvements after architectural upgrades, ensuring improved responsiveness and reduced latency.",
+      "Supported release readiness by executing regression suites before production deployments; collaborated closely during modernization sprints.",
     ],
   },
   {
-    company: "Tata Consultancy Services (Client: Citibank)",
+    company: "Tata Consultancy Services (Client: Transamerica, CitiBank)",
     location: "India",
     role: "Software Engineer in Test",
-    dates: "Jan 2020 – Jul 2025",
+    dates: "Jan 2020 – Jul 2023",
     highlights: [
-      "Owned performance engineering for enterprise banking platforms: load, stress, spike, and endurance testing with JMeter and LoadRunner; validated scalability for 500K+ concurrent users.",
-      "Improved stability by 25% via JVM memory leak detection, garbage collection strategy optimization, heap tuning, and resolving thread contention.",
-      "Reduced response time by 30% through SQL optimization, index tuning, connection pool configuration, and latency analysis across distributed systems.",
-      "Drove RCA using Dynatrace, Splunk, and AppDynamics; integrated performance scripts into CI/CD for automated regression validation, reducing release risk by 20%.",
+      "Led SIT, regression, smoke, and UAT validation for insurance and annuity administration platforms; ensured test coverage aligned to acceptance criteria.",
+      "Built Selenium WebDriver automation in Java + TestNG, reducing repetitive regression effort by 35%; structured frameworks using Page Object Model for scalability.",
+      "Validated REST APIs and backend integrations; verified database consistency using SQL queries; partnered with developers to reduce defect resolution time by 25%.",
+      "Owned end-to-end performance validation for high-volume financial applications with strict SLA compliance.",
+      "Designed and executed load, stress, and endurance scenarios using JMeter and LoadRunner; monitored response time, throughput, CPU/memory, and thread behavior.",
+      "Performed RCA using Splunk, AppDynamics, and Dynatrace; tuned JVM garbage collection and optimized database indexing to reduce peak response time by 30% and improve stability by 25%.",
+      "Implemented API stubbing/service virtualization using CA LISA to isolate dependencies; integrated performance tests into CI/CD for automated performance regression.",
     ],
   },
   {
     company: "Dartin Technologies",
     location: "India",
-    role: "Junior Software Engineer",
+    role: "Jr. Software Engineer",
     dates: "May 2019 – Jan 2020",
     highlights: [
-      "Assisted with requirements analysis and SDLC-aligned validation activities.",
-      "Contributed to technical documentation and design reviews to improve quality oversight.",
-      "Executed test scripts and supported testability-focused workflows.",
+      "Developed manual and automated test cases for client-facing web applications.",
+      "Built Selenium-based regression automation; improved release validation speed and consistency.",
+      "Validated REST API responses using Postman and verified backend DB consistency with SQL.",
+      "Participated in CI build validation and defect lifecycle tracking in Jira within Agile workflows.",
     ],
   },
 ];
@@ -112,46 +109,50 @@ const projects = [
     tags: ["React", "Vite", "Tailwind CSS", "Framer Motion", "GitHub", "Vercel"],
     bullets: [
       "Designed and developed a fully responsive portfolio to showcase QA, performance engineering, and distributed systems expertise.",
-      "Implemented animated UI components using Framer Motion to enhance user engagement and professional presentation.",
+      "Implemented animated UI components using Framer Motion to enhance engagement and professional presentation.",
       "Integrated contact actions (mailto, tel), external profile linking (LinkedIn, GitHub), and structured impact metrics.",
-      "Deployed a production-ready build through a GitHub-based workflow and Vercel hosting.",
+      "Deployed a production-ready build via a GitHub-based workflow and Vercel hosting; structured content around measurable impact (latency, stability, scalability).",
     ],
-    links: {
-      live: "https://yasogreeshma-portfolio.vercel.app",
-      code: "https://github.com/greeshmaneelathi/yasogreeshma-portfolio",
-    },
+    links: [
+      { label: "Live", href: links.portfolioLive },
+      { label: "Code", href: links.portfolioCode },
+    ],
   },
   {
-    title: "Math Kids with Rabbit (Mobile Game)",
-    org: "CSU San Bernardino",
-    tags: ["C++", "Mobile", "Performance", "UX"],
+    title: "Math Kids with Rabbit – Game Development",
+    org: "California State University, San Bernardino",
+    tags: ["C++", "Mobile", "Performance", "UX", "Accessibility"],
     bullets: [
-      "Built gameplay mechanics, physics, logic, and scoring systems for Android and iOS.",
-      "Engineered efficient C++ state management for smooth performance across diverse devices.",
-      "Troubleshot state conflicts and optimized rendering for mobile performance.",
+      "Developed a cross-platform educational mobile game (Android & iOS) with gameplay mechanics, scoring logic, physics behavior, and interactive chat features.",
+      "Engineered optimized C++ logic and state management for smooth performance across diverse mobile devices.",
+      "Resolved state conflicts and optimized rendering pipelines to reduce latency and improve frame stability.",
+      "Focused on intuitive navigation and accessibility-oriented UX to improve engagement and usability.",
     ],
+    links: [{ label: "Code", href: links.mathKidsCode }],
   },
   {
-    title: "AI-Based Patient Readmission Risk Predictor",
-    org: "CSU San Bernardino",
+    title: "AI-Based Patient Readmission Risk Predictor (Healthcare AI)",
+    org: "California State University, San Bernardino",
     tags: ["Machine Learning", "REST APIs", "Security", "Deployment"],
     bullets: [
-      "Built and deployed machine learning models; supported secure handling of patient data.",
-      "Integrated REST APIs for model-driven outputs and data pipelines.",
-      "Produced structured documentation and collaborated with stakeholders.",
+      "Built and deployed machine learning models to predict hospital readmission risk using structured healthcare datasets.",
+      "Designed RESTful APIs to integrate ML outputs into backend systems and support secure data workflows.",
+      "Implemented data validation and security controls to support HIPAA-aligned handling of patient data.",
+      "Collaborated with stakeholders to translate predictive insights into actionable healthcare decisions.",
     ],
   },
   {
     title: "Enterprise Learning Management Platform",
-    org: "JNTU Kakinada",
+    org: "Jawaharlal Nehru Technological University Kakinada",
     tags: ["Java", "AWS EC2", "Distributed Systems", "Monitoring"],
     bullets: [
-      "Designed distributed backend services in Java and deployed on AWS EC2.",
-      "Implemented asynchronous pipelines and optimized content delivery performance.",
+      "Designed scalable backend services using Java and AWS EC2 to support concurrent global users.",
+      "Built asynchronous data pipelines for course content, user tracking, and performance analytics.",
+      "Optimized performance and reduced latency using monitoring and backend tuning strategies.",
+      "Implemented cloud-based deployment workflows to improve reliability and availability.",
     ],
   },
 ];
-
 
 function Pill({ children }) {
   return (
@@ -173,10 +174,29 @@ function Section({ id, title, subtitle, children }) {
   );
 }
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 18 },
-  show: { opacity: 1, y: 0 },
-};
+function ProjectLinks({ linksList = [] }) {
+  if (!linksList?.length) return null;
+
+  return (
+    <div className="mt-5 flex flex-wrap gap-3">
+      {linksList.map((l) => (
+        <a
+          key={l.label + l.href}
+          href={l.href}
+          target="_blank"
+          rel="noreferrer"
+          className={`rounded-2xl px-4 py-2 text-sm font-semibold shadow-sm transition ${
+            l.label === "Live"
+              ? "bg-neutral-900 text-white hover:bg-neutral-800"
+              : "border border-neutral-200 bg-white text-neutral-900 hover:bg-neutral-50"
+          }`}
+        >
+          {l.label}
+        </a>
+      ))}
+    </div>
+  );
+}
 
 export default function App() {
   return (
@@ -189,11 +209,21 @@ export default function App() {
           </a>
 
           <nav className="hidden gap-6 text-sm text-neutral-600 md:flex">
-            <a className="hover:text-neutral-900" href="#about">About</a>
-            <a className="hover:text-neutral-900" href="#skills">Skills</a>
-            <a className="hover:text-neutral-900" href="#experience">Experience</a>
-            <a className="hover:text-neutral-900" href="#projects">Projects</a>
-            <a className="hover:text-neutral-900" href="#contact">Contact</a>
+            <a className="hover:text-neutral-900" href="#about">
+              About
+            </a>
+            <a className="hover:text-neutral-900" href="#skills">
+              Skills
+            </a>
+            <a className="hover:text-neutral-900" href="#experience">
+              Experience
+            </a>
+            <a className="hover:text-neutral-900" href="#projects">
+              Projects
+            </a>
+            <a className="hover:text-neutral-900" href="#contact">
+              Contact
+            </a>
           </nav>
 
           <div className="flex items-center gap-2">
@@ -201,14 +231,15 @@ export default function App() {
               href={links.resume}
               target="_blank"
               rel="noreferrer"
-              className="hidden rounded-xl bg-neutral-900 px-3 py-2 text-sm font-medium text-white shadow-sm hover:bg-neutral-800 md:inline-flex transition-transform duration-200 hover:-translate-y-0.5"
+              className="hidden rounded-xl bg-neutral-900 px-3 py-2 text-sm font-medium text-white shadow-sm hover:bg-neutral-800 md:inline-flex"
             >
               Resume
             </a>
 
             <a
-              href="tel:+19093806984"
-              className="hidden px-4 py-2 rounded-xl border border-neutral-200 bg-white text-sm font-medium text-neutral-800 shadow-sm hover:bg-neutral-50 transition-transform duration-200 hover:-translate-y-0.5 md:inline-flex"
+              href={links.phone}
+              className="hidden rounded-xl border border-neutral-200 bg-white px-3 py-2 text-sm font-medium text-neutral-800 shadow-sm hover:bg-neutral-50 md:inline-flex"
+              title="Call"
             >
               +1 909-380-6984
             </a>
@@ -217,7 +248,7 @@ export default function App() {
               href={links.linkedin}
               target="_blank"
               rel="noreferrer"
-              className="rounded-xl border border-neutral-200 bg-white px-3 py-2 text-sm font-medium text-neutral-800 shadow-sm hover:bg-neutral-50 transition-transform duration-200 hover:-translate-y-0.5"
+              className="rounded-xl border border-neutral-200 bg-white px-3 py-2 text-sm font-medium text-neutral-800 shadow-sm hover:bg-neutral-50"
             >
               LinkedIn
             </a>
@@ -226,7 +257,7 @@ export default function App() {
               href={links.github}
               target="_blank"
               rel="noreferrer"
-              className="rounded-xl border border-neutral-200 bg-white px-3 py-2 text-sm font-medium text-neutral-800 shadow-sm hover:bg-neutral-50 transition-transform duration-200 hover:-translate-y-0.5"
+              className="rounded-xl border border-neutral-200 bg-white px-3 py-2 text-sm font-medium text-neutral-800 shadow-sm hover:bg-neutral-50"
             >
               GitHub
             </a>
@@ -238,22 +269,16 @@ export default function App() {
         {/* Hero */}
         <div className="grid gap-10 py-14 md:grid-cols-12 md:items-center">
           <div className="md:col-span-7">
-            <motion.div
-              variants={fadeUp}
-              initial="hidden"
-              animate="show"
-              transition={{ duration: 0.55 }}
-              className="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-sm text-neutral-700 shadow-sm"
-            >
+            <div className="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-sm text-neutral-700 shadow-sm">
               <span className="h-2 w-2 rounded-full bg-emerald-500" />
-              Open to QA / SDET · Performance · Backend
-            </motion.div>
+              Open to QA / SDET · Automation · Performance
+            </div>
 
             <motion.h1
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.08 }}
-              className="mt-5 text-4xl md:text-5xl font-bold tracking-tight"
+              transition={{ duration: 0.6 }}
+              className="mt-4 text-4xl font-bold tracking-tight md:text-5xl"
             >
               Quality-first engineering for scalable, reliable systems.
             </motion.h1>
@@ -261,30 +286,27 @@ export default function App() {
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.22 }}
-              className="mt-4 text-neutral-600 max-w-xl leading-relaxed"
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="mt-4 max-w-xl text-neutral-600"
             >
-              I am a quality-focused Software Engineer with 5+ years of experience engineering performance and reliability into large-scale financial systems.
-              Through automation frameworks, observability-driven debugging, and CI/CD validation, I help teams ship stable, scalable software with confidence.
+              Software Development Engineer in Test (SDET) with 5+ years of experience building scalable automation
+              frameworks and embedding quality into distributed systems. Strong background in Java and Python, API
+              automation, performance engineering, and performance testing in enterprise-scale environments. Skilled in
+              debugging complex backend systems, designing reusable test architectures, and validating reliability under
+              high-volume workloads.
             </motion.p>
 
-            {/* Animated Buttons */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="mt-6 flex flex-wrap gap-3"
-            >
+            <div className="mt-6 flex flex-wrap gap-3">
               <a
                 href="#projects"
-                className="rounded-2xl bg-neutral-900 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-neutral-800 transition-transform duration-200 hover:-translate-y-0.5"
+                className="rounded-2xl bg-neutral-900 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-neutral-800"
               >
                 View Projects
               </a>
 
               <a
                 href="#experience"
-                className="rounded-2xl border border-neutral-200 bg-white px-5 py-3 text-sm font-semibold text-neutral-900 shadow-sm hover:bg-neutral-50 transition-transform duration-200 hover:-translate-y-0.5"
+                className="rounded-2xl border border-neutral-200 bg-white px-5 py-3 text-sm font-semibold text-neutral-900 shadow-sm hover:bg-neutral-50"
               >
                 Experience
               </a>
@@ -293,57 +315,36 @@ export default function App() {
                 href={links.github}
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-2xl border border-neutral-200 bg-white px-5 py-3 text-sm font-semibold text-neutral-900 shadow-sm hover:bg-neutral-50 transition-transform duration-200 hover:-translate-y-0.5"
+                className="rounded-2xl border border-neutral-200 bg-white px-5 py-3 text-sm font-semibold text-neutral-900 shadow-sm hover:bg-neutral-50"
               >
                 GitHub
               </a>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.52 }}
-              className="mt-5 flex flex-wrap gap-2"
-            >
-              {["API Testing", "Selenium", "Postman", "JMeter", "Jira", "Python", "Java"].map((t) => (
-                <Pill key={t}>{t}</Pill>
-              ))}
-            </motion.div>
+            </div>
           </div>
 
           <div className="md:col-span-5">
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.65, delay: 0.18 }}
-              className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm"
-            >
+            <div className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
               <h3 className="text-base font-semibold">Impact snapshot</h3>
 
               <div className="mt-4 grid grid-cols-2 gap-3">
                 {stats.map((s) => (
-                  <motion.div
-                    key={s.label}
-                    whileHover={{ y: -4 }}
-                    transition={{ duration: 0.18 }}
-                    className="rounded-2xl border border-neutral-200 bg-neutral-50 p-4"
-                  >
+                  <div key={s.label} className="rounded-2xl border border-neutral-200 bg-neutral-50 p-4">
                     <div className="text-2xl font-semibold tracking-tight">{s.value}</div>
                     <div className="mt-1 text-sm text-neutral-600">{s.label}</div>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
 
               <div className="mt-5 rounded-2xl bg-neutral-900 p-4 text-white">
                 <div className="text-sm font-semibold">Primary strengths</div>
                 <div className="mt-2 flex flex-wrap gap-2 text-sm">
+                  <span className="rounded-full bg-white/10 px-3 py-1">Test automation</span>
+                  <span className="rounded-full bg-white/10 px-3 py-1">API validation</span>
                   <span className="rounded-full bg-white/10 px-3 py-1">Performance testing</span>
-                  <span className="rounded-full bg-white/10 px-3 py-1">RCA + observability</span>
-                  <span className="rounded-full bg-white/10 px-3 py-1">CI/CD integration</span>
-                  <span className="rounded-full bg-white/10 px-3 py-1">Distributed systems</span>
+                  <span className="rounded-full bg-white/10 px-3 py-1">Observability + RCA</span>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
 
@@ -352,34 +353,27 @@ export default function App() {
           <Section
             id="about"
             title="About"
-            subtitle="Performance-first mindset, engineering approach to quality, and measurable impact in stability, latency, and release confidence."
+            subtitle="Automation-first mindset, performance engineering depth, and measurable impact in stability, latency, and release confidence."
           >
-            <motion.div
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.25 }}
-              transition={{ duration: 0.55 }}
-              className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm"
-            >
+            <div className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
               <p className="leading-relaxed text-neutral-700">
-                My background spans Software Engineering in Test, performance engineering, and backend systems. I’ve worked
-                across enterprise environments where reliability, observability, and governance matter—especially in financial
-                systems and compliance-driven delivery. I enjoy digging into bottlenecks, reading traces and logs, and turning
-                findings into durable fixes that prevent repeat issues.
+                I build quality into software with a mix of automation frameworks, API validation, and performance engineering.
+                I’ve worked on distributed systems in enterprise environments where reliability and observability are non-negotiable.
+                I like turning traces, logs, and metrics into clear root causes and durable fixes—so teams can ship confidently.
               </p>
 
               <div className="mt-4 flex flex-wrap gap-2">
+                <Pill>Selenium</Pill>
+                <Pill>REST Assured</Pill>
                 <Pill>JMeter</Pill>
                 <Pill>LoadRunner</Pill>
                 <Pill>Dynatrace</Pill>
                 <Pill>Splunk</Pill>
-                <Pill>AWS</Pill>
-                <Pill>Docker</Pill>
-                <Pill>Python</Pill>
                 <Pill>Java</Pill>
-                <Pill>Go</Pill>
+                <Pill>Python</Pill>
+                <Pill>CI/CD</Pill>
               </div>
-            </motion.div>
+            </div>
           </Section>
         </div>
 
@@ -388,21 +382,14 @@ export default function App() {
           <Section id="skills" title="Skills">
             <div className="grid gap-4 md:grid-cols-2">
               {Object.entries(skills).map(([group, items]) => (
-                <motion.div
-                  key={group}
-                  initial={{ opacity: 0, y: 18 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.2 }}
-                  transition={{ duration: 0.55 }}
-                  className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm"
-                >
+                <div key={group} className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
                   <h3 className="text-base font-semibold">{group}</h3>
                   <div className="mt-3 flex flex-wrap gap-2">
                     {items.map((it) => (
                       <Pill key={it}>{it}</Pill>
                     ))}
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
           </Section>
@@ -413,14 +400,7 @@ export default function App() {
           <Section id="experience" title="Experience">
             <div className="grid gap-4">
               {experience.map((job) => (
-                <motion.div
-                  key={job.company + job.role}
-                  initial={{ opacity: 0, y: 18 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.2 }}
-                  transition={{ duration: 0.55 }}
-                  className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm"
-                >
+                <div key={job.company + job.role} className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
                   <div className="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
                     <div>
                       <h3 className="text-lg font-semibold tracking-tight">{job.role}</h3>
@@ -436,7 +416,7 @@ export default function App() {
                       <li key={idx}>{h}</li>
                     ))}
                   </ul>
-                </motion.div>
+                </div>
               ))}
             </div>
           </Section>
@@ -447,15 +427,7 @@ export default function App() {
           <Section id="projects" title="Projects">
             <div className="grid gap-4 md:grid-cols-2">
               {projects.map((p) => (
-                <motion.div
-                  key={p.title}
-                  initial={{ opacity: 0, y: 18 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.2 }}
-                  transition={{ duration: 0.55 }}
-                  whileHover={{ y: -6 }}
-                  className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm"
-                >
+                <div key={p.title} className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
                   <div className="flex items-start justify-between gap-4">
                     <div>
                       <h3 className="text-lg font-semibold tracking-tight">{p.title}</h3>
@@ -481,30 +453,9 @@ export default function App() {
                     ))}
                   </ul>
 
-                  {p.links ? (
-  <div className="mt-5 flex flex-wrap gap-3">
-    <a
-      href={p.links.live}
-      target="_blank"
-      rel="noreferrer"
-      className="rounded-2xl bg-neutral-900 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-neutral-800 transition-transform duration-200 hover:-translate-y-0.5"
-    >
-      Live
-    </a>
-    <a
-      href={p.links.code}
-      target="_blank"
-      rel="noreferrer"
-      className="rounded-2xl border border-neutral-200 bg-white px-4 py-2 text-sm font-semibold text-neutral-900 shadow-sm hover:bg-neutral-50 transition-transform duration-200 hover:-translate-y-0.5"
-    >
-      Code
-    </a>
-  </div>
-) : (
-  <div className="mt-5 text-sm text-neutral-500">(Optional) Add Demo + Code links later</div>
-)}
-
-                </motion.div>
+                  {/* ✅ Live/Code buttons (only show when links exist) */}
+                  <ProjectLinks linksList={p.links} />
+                </div>
               ))}
             </div>
           </Section>
@@ -513,30 +464,34 @@ export default function App() {
         {/* Contact */}
         <div className="py-14">
           <Section id="contact" title="Contact" subtitle="Best way to reach me: email. I typically respond within 24–48 hours.">
-            <motion.div
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.55 }}
-              className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm"
-            >
-              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-                <a href={links.email} className="rounded-2xl border border-neutral-200 bg-neutral-50 p-4 hover:bg-neutral-100 transition">
+            <div className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
+              <div className="grid gap-4 md:grid-cols-3">
+                <a href={links.email} className="rounded-2xl border border-neutral-200 bg-neutral-50 p-4 hover:bg-neutral-100">
                   <div className="text-sm text-neutral-600">Email</div>
                   <div className="mt-1 font-semibold">yneelathi0511@gmail.com</div>
                 </a>
 
-                <a href="tel:+19093806984" className="rounded-2xl border border-neutral-200 bg-neutral-50 p-4 hover:bg-neutral-100 transition">
+                <a href={links.phone} className="rounded-2xl border border-neutral-200 bg-neutral-50 p-4 hover:bg-neutral-100">
                   <div className="text-sm text-neutral-600">Phone</div>
                   <div className="mt-1 font-semibold">+1 909-380-6984</div>
                 </a>
 
-                <a href={links.linkedin} target="_blank" rel="noreferrer" className="rounded-2xl border border-neutral-200 bg-neutral-50 p-4 hover:bg-neutral-100 transition">
+                <a
+                  href={links.linkedin}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-2xl border border-neutral-200 bg-neutral-50 p-4 hover:bg-neutral-100"
+                >
                   <div className="text-sm text-neutral-600">LinkedIn</div>
                   <div className="mt-1 font-semibold">Open profile</div>
                 </a>
 
-                <a href={links.github} target="_blank" rel="noreferrer" className="rounded-2xl border border-neutral-200 bg-neutral-50 p-4 hover:bg-neutral-100 transition">
+                <a
+                  href={links.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-2xl border border-neutral-200 bg-neutral-50 p-4 hover:bg-neutral-100"
+                >
                   <div className="text-sm text-neutral-600">GitHub</div>
                   <div className="mt-1 font-semibold">View repos</div>
                 </a>
@@ -545,13 +500,13 @@ export default function App() {
               <div className="mt-6 rounded-2xl bg-neutral-900 p-5 text-white">
                 <div className="text-sm font-semibold">Quick pitch</div>
                 <p className="mt-2 text-sm leading-relaxed text-white/90">
-                  I am a Software Engineer in Test with 5+ years of experience in performance engineering and quality-driven delivery.
-                  I’ve validated enterprise banking platforms at scale (500K+ concurrent users), improved stability by 25% through JVM tuning,
-                  and reduced response times by 30% using end-to-end bottleneck analysis across distributed systems. I’m currently looking for
-                  QA/SDET and performance roles where I can own release confidence and system reliability.
+                  SDET with 5+ years across automation, API validation, and performance engineering in enterprise environments.
+                  I build scalable test architectures (Selenium, TestNG, REST Assured), validate distributed backend services, and
+                  run performance testing with JMeter/LoadRunner. I use Dynatrace/AppDynamics/Splunk for root cause analysis and
+                  ship quality via CI/CD-aligned testing to improve reliability, stability, and release confidence.
                 </p>
               </div>
-            </motion.div>
+            </div>
           </Section>
         </div>
 
@@ -560,9 +515,18 @@ export default function App() {
             <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
               <div>© {new Date().getFullYear()} Yaso Greeshma Neelathi</div>
               <div className="flex flex-wrap gap-4">
-                <a className="hover:text-neutral-800" href={links.email}>Email</a>
-                <a className="hover:text-neutral-800" href={links.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
-                <a className="hover:text-neutral-800" href={links.github} target="_blank" rel="noreferrer">GitHub</a>
+                <a className="hover:text-neutral-800" href={links.email}>
+                  Email
+                </a>
+                <a className="hover:text-neutral-800" href={links.phone}>
+                  Phone
+                </a>
+                <a className="hover:text-neutral-800" href={links.linkedin} target="_blank" rel="noreferrer">
+                  LinkedIn
+                </a>
+                <a className="hover:text-neutral-800" href={links.github} target="_blank" rel="noreferrer">
+                  GitHub
+                </a>
               </div>
             </div>
           </div>
