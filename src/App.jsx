@@ -20,7 +20,7 @@ const links = {
   portfolioCode: "https://github.com/greeshmaneelathi/yasogreeshma-portfolio",
 
   // ✅ REPLACE THIS with your real Math Kids repo URL
-  mathKidsCode: "https://github.com/greeshmaneelathi/REPLACE_WITH_MATH_KIDS_REPO",
+  mathKidsCode: "https://github.com/greeshmaneelathi/Team-Rabbit",
 };
 
 const stats = [
