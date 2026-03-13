@@ -6,28 +6,54 @@ const links = {
   phone: "tel:+19093806984",
   linkedin: "https://www.linkedin.com/in/yaso-greeshma-n-33783414b/",
   github: "https://github.com/greeshmaneelathi",
-  resume: "https://drive.google.com/drive/folders/1jqEcLyQIuGoiGt4lcVi0YPvvVxcq41iG",
+  resume: "https://drive.google.com/file/d/1HBSDaoyU5EG6Ho7jmzlGSlHqCI4FcJmd/view?usp=sharing",
   portfolioLive: "https://yasogreeshma-portfolio.vercel.app",
   portfolioCode: "https://github.com/greeshmaneelathi/yasogreeshma-portfolio",
-  mathKidsCode: "https://github.com/greeshmaneelathi", // replace with exact repo if available
+  mathKidsCode: "https://github.com/greeshmaneelathi", // replace if you have the exact repo
 };
 
 const stats = [
-  { label: "Backend & API focus", value: "REST" },
-  { label: "Cloud deployment", value: "CI/CD" },
-  { label: "Enterprise systems", value: "Scale" },
-  { label: "System reliability", value: "High" },
+  { label: "API performance gain", value: "25%" },
+  { label: "Application performance boost", value: "20%" },
+  { label: "Response time reduction", value: "30%" },
+  { label: "Regression effort reduced", value: "35%" },
+  { label: "Telemetry scale", value: "Millions" },
+  { label: "Users supported", value: "Enterprise" },
 ];
 
 const skills = {
-  Programming: ["C#", ".NET 8", "JavaScript", "TypeScript", "SQL"],
-  "Backend Development": ["ASP.NET Core", "REST APIs", "Web API", "JSON", "Distributed Services"],
-  Frontend: ["Blazor", "React", "Frontend Components"],
-  Databases: ["SQL Server", "PostgreSQL", "Relational Databases", "Query Optimization"],
-  Tools: ["Git", "Visual Studio", "Postman"],
-  DevOps: ["CI/CD Pipelines", "Azure DevOps", "GitHub", "Vercel"],
-  Platforms: ["Salesforce CRM", "API Integrations"],
-  Concepts: ["Microservices", "Cloud Applications", "Data Pipelines", "AI Integration", "Agile/Scrum"],
+  "Backend Engineering": [
+    "C#",
+    ".NET 8",
+    "ASP.NET Core",
+    "REST APIs",
+    "Web API",
+    "JSON",
+    "Distributed Services",
+  ],
+  Frontend: ["React", "Blazor", "JavaScript", "TypeScript", "Frontend Components"],
+  Databases: [
+    "SQL Server",
+    "PostgreSQL",
+    "Relational Databases",
+    "Query Optimization",
+  ],
+  "Cloud & DevOps": [
+    "CI/CD Pipelines",
+    "Azure DevOps",
+    "GitHub",
+    "Vercel",
+    "Cloud Applications",
+  ],
+  Tools: ["Git", "Visual Studio", "Postman", "Salesforce CRM"],
+  "Engineering Practices": [
+    "Microservices",
+    "Agile/Scrum",
+    "API Integrations",
+    "Performance Optimization",
+    "Automation Frameworks",
+    "Data Pipelines",
+  ],
 };
 
 const experience = [
@@ -38,7 +64,7 @@ const experience = [
     dates: "Jun 2025 – Present",
     highlights: [
       "Developed scalable REST APIs using C# and ASP.NET supporting cloud-based telemetry systems processing large real-time data streams.",
-      "Optimized backend services and SQL queries to improve API response performance and system reliability for enterprise applications.",
+      "Optimized backend services and SQL queries, improving API response performance and system reliability for enterprise applications.",
       "Designed JSON and XML service contracts enabling reliable communication between distributed backend services.",
       "Integrated backend services with CI/CD pipelines to improve deployment stability and release automation.",
     ],
@@ -104,6 +130,16 @@ const projects = [
       "Developed machine learning models to predict hospital readmission risks using healthcare datasets.",
       "Built REST APIs to integrate machine learning predictions into backend systems for real-time prediction access.",
       "Evaluated model performance using statistical metrics and AI-driven analytics techniques.",
+    ],
+  },
+  {
+    title: "Enterprise Learning Management Platform",
+    org: "Jawaharlal Nehru Technological University Kakinada",
+    tags: ["Java", "AWS EC2", "Distributed Systems", "Data Pipelines"],
+    bullets: [
+      "Designed scalable backend services supporting global access and distributed usage patterns.",
+      "Implemented asynchronous data pipelines and optimized backend workflows for reliable content delivery.",
+      "Improved performance and data handling across platform services using scalable architecture patterns.",
     ],
   },
   {
@@ -196,13 +232,6 @@ export default function App() {
             </a>
 
             <a
-              href={links.phone}
-              className="hidden rounded-xl border border-neutral-200 bg-white px-3 py-2 text-sm font-medium text-neutral-800 shadow-sm hover:bg-neutral-50 md:inline-flex transition-transform duration-200 hover:-translate-y-0.5"
-            >
-              +1 909-380-6984
-            </a>
-
-            <a
               href={links.linkedin}
               target="_blank"
               rel="noreferrer"
@@ -234,7 +263,7 @@ export default function App() {
               className="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-sm text-neutral-700 shadow-sm"
             >
               <span className="h-2 w-2 rounded-full bg-emerald-500" />
-              Open to Software Engineering · Backend · Cloud Applications
+              Open to Software Engineer · Backend Engineer · Full Stack Engineer
             </motion.div>
 
             <motion.h1
@@ -243,7 +272,7 @@ export default function App() {
               transition={{ duration: 0.6, delay: 0.08 }}
               className="mt-5 text-4xl font-bold tracking-tight md:text-6xl"
             >
-              Building scalable software systems, APIs, and modern web applications.
+              Building scalable APIs, modern web applications, and reliable backend systems.
             </motion.h1>
 
             <motion.p
@@ -252,8 +281,8 @@ export default function App() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-5 max-w-2xl text-lg leading-relaxed text-neutral-600"
             >
-              Software Engineer focused on backend development, distributed systems, modern web applications, and cloud-based software delivery.
-              Experienced in developing REST APIs, modernizing legacy applications, improving system performance, and building reliable enterprise software in Agile environments.
+              Software Engineer focused on C#, .NET, React, REST APIs, SQL systems, and cloud-based application delivery.
+              I build performant backend services, modernize legacy platforms, and create production-ready software that improves reliability, speed, and developer efficiency.
             </motion.p>
 
             <motion.div
@@ -292,7 +321,7 @@ export default function App() {
               transition={{ duration: 0.55, delay: 0.48 }}
               className="mt-6 flex flex-wrap gap-2"
             >
-              {["C#", ".NET", "REST APIs", "Blazor", "SQL", "Cloud", "Microservices"].map((item) => (
+              {["C#", ".NET", "React", "REST APIs", "SQL Server", "PostgreSQL", "CI/CD"].map((item) => (
                 <Pill key={item}>{item}</Pill>
               ))}
             </motion.div>
@@ -305,7 +334,7 @@ export default function App() {
               transition={{ duration: 0.65, delay: 0.18 }}
               className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm"
             >
-              <h3 className="text-base font-semibold">Snapshot</h3>
+              <h3 className="text-base font-semibold">Impact snapshot</h3>
 
               <div className="mt-4 grid grid-cols-2 gap-3">
                 {stats.map((stat) => (
@@ -322,7 +351,7 @@ export default function App() {
               </div>
 
               <div className="mt-5 rounded-2xl bg-neutral-900 p-4 text-white">
-                <div className="text-sm font-semibold">Core strengths</div>
+                <div className="text-sm font-semibold">What I bring</div>
                 <div className="mt-2 flex flex-wrap gap-2 text-sm">
                   <span className="rounded-full bg-white/10 px-3 py-1">Backend APIs</span>
                   <span className="rounded-full bg-white/10 px-3 py-1">System modernization</span>
@@ -338,7 +367,7 @@ export default function App() {
           <Section
             id="about"
             title="About"
-            subtitle="Backend engineering, modern web development, and scalable software delivery across enterprise systems."
+            subtitle="Software engineering across enterprise systems, cloud applications, and production-ready backend services."
           >
             <motion.div
               initial={{ opacity: 0, y: 18 }}
@@ -348,19 +377,19 @@ export default function App() {
               className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm"
             >
               <p className="leading-relaxed text-neutral-700">
-                I work at the intersection of backend engineering, web application development, and system modernization.
-                My experience includes building REST APIs, integrating cloud-based services, optimizing performance, and supporting full software development lifecycles across enterprise and government systems.
+                I build software at the intersection of backend engineering, modern web development, and scalable system design.
+                My work includes creating REST APIs, modernizing legacy applications, integrating cloud-based deployment pipelines,
+                improving database performance, and delivering reliable application experiences across enterprise and government systems.
               </p>
 
               <div className="mt-4 flex flex-wrap gap-2">
-                <Pill>C#</Pill>
-                <Pill>.NET 8</Pill>
                 <Pill>ASP.NET Core</Pill>
+                <Pill>Web APIs</Pill>
                 <Pill>Blazor</Pill>
-                <Pill>REST APIs</Pill>
-                <Pill>PostgreSQL</Pill>
-                <Pill>SQL Server</Pill>
+                <Pill>React</Pill>
+                <Pill>SQL Optimization</Pill>
                 <Pill>Azure DevOps</Pill>
+                <Pill>Microservices</Pill>
               </div>
             </motion.div>
           </Section>
@@ -472,7 +501,7 @@ export default function App() {
           <Section
             id="contact"
             title="Contact"
-            subtitle="Open to discussing software engineering opportunities, backend systems development, and scalable platform engineering."
+            subtitle="Open to software engineering opportunities across backend systems, full-stack applications, and cloud-native platforms."
           >
             <motion.div
               initial={{ opacity: 0, y: 18 }}
@@ -516,7 +545,7 @@ export default function App() {
               <div className="mt-6 rounded-2xl bg-neutral-900 p-5 text-white">
                 <div className="text-sm font-semibold">Current focus</div>
                 <p className="mt-2 text-sm leading-relaxed text-white/90">
-                  Interested in software engineering opportunities focused on backend systems, APIs, cloud-based platforms, and modern application development.
+                  Building production-ready software with strong foundations in backend APIs, cloud deployment, modern frontend integration, and performance-aware engineering.
                 </p>
               </div>
             </motion.div>
