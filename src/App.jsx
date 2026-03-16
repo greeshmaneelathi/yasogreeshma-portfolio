@@ -9,7 +9,10 @@ const links = {
   resume: "https://drive.google.com/file/d/1HBSDaoyU5EG6Ho7jmzlGSlHqCI4FcJmd/view?usp=sharing",
   portfolioLive: "https://yasogreeshma-portfolio.vercel.app",
   portfolioCode: "https://github.com/greeshmaneelathi/yasogreeshma-portfolio",
-  mathKidsCode: "https://github.com/greeshmaneelathi", // replace if you have the exact repo
+  teamRabbitCode: "https://github.com/greeshmaneelathi/Team-Rabbit",
+  aiReadmissionCode: "https://github.com/greeshmaneelathi/ai-patient-readmission-predictor",
+  logAnomalyCode: "https://github.com/greeshmaneelathi/distributed-log-anomaly-detection",
+  realtimeChatCode: "https://github.com/greeshmaneelathi/scalable-realtime-chat",
 };
 
 const stats = [
@@ -124,26 +127,39 @@ const projects = [
   },
   {
     title: "AI-Based Patient Readmission Risk Predictor",
-    org: "California State University, San Bernardino",
-    tags: ["Machine Learning", "Python", "REST APIs"],
+    org: "GitHub Project",
+    tags: ["Python", "scikit-learn", "FastAPI", "Machine Learning", "Healthcare AI"],
     bullets: [
-      "Developed machine learning models to predict hospital readmission risks using healthcare datasets.",
-      "Built REST APIs to integrate machine learning predictions into backend systems for real-time prediction access.",
-      "Evaluated model performance using statistical metrics and AI-driven analytics techniques.",
+      "Built a machine learning system to predict 30-day hospital readmission risk using structured healthcare data.",
+      "Designed API-accessible prediction workflows for real-time backend integration using FastAPI.",
+      "Focused on model evaluation, prediction reliability, and practical healthcare decision support workflows.",
     ],
+    links: [{ label: "Code", href: links.aiReadmissionCode }],
   },
   {
-    title: "Enterprise Learning Management Platform",
-    org: "Jawaharlal Nehru Technological University Kakinada",
-    tags: ["Java", "AWS EC2", "Distributed Systems", "Data Pipelines"],
+    title: "Distributed Log Anomaly Detection",
+    org: "GitHub Project",
+    tags: ["Python", "Kafka", "Docker", "Kubernetes", "Distributed Systems"],
     bullets: [
-      "Designed scalable backend services supporting global access and distributed usage patterns.",
-      "Implemented asynchronous data pipelines and optimized backend workflows for reliable content delivery.",
-      "Improved performance and data handling across platform services using scalable architecture patterns.",
+      "Developed a real-time distributed log analysis system to identify anomalous events across streaming infrastructure.",
+      "Integrated Kafka-based event ingestion with machine learning workflows for scalable anomaly detection.",
+      "Used containerized deployment patterns to support distributed processing and production-style observability use cases.",
     ],
+    links: [{ label: "Code", href: links.logAnomalyCode }],
   },
   {
-    title: "Math Kids with Rabbit – Mobile Game",
+    title: "Scalable Realtime Chat",
+    org: "GitHub Project",
+    tags: ["Python", "WebSockets", "Redis", "PostgreSQL", "Docker"],
+    bullets: [
+      "Built a full-stack real-time chat system using WebSockets for low-latency bidirectional communication.",
+      "Integrated Redis pub/sub for message distribution and PostgreSQL for persistent conversation storage.",
+      "Designed the application for scalability, modular backend processing, and containerized deployment.",
+    ],
+    links: [{ label: "Code", href: links.realtimeChatCode }],
+  },
+  {
+    title: "Math Kids with Rabbit – Game Development",
     org: "California State University, San Bernardino",
     tags: ["C++", "Cross-Platform Development", "Performance"],
     bullets: [
@@ -151,7 +167,7 @@ const projects = [
       "Improved frame stability and gameplay responsiveness through rendering and state-management optimizations.",
       "Designed interactive UI elements and gameplay mechanics to enhance user engagement for educational gaming.",
     ],
-    links: [{ label: "Code", href: links.mathKidsCode }],
+    links: [{ label: "Code", href: links.teamRabbitCode }],
   },
 ];
 
@@ -161,6 +177,29 @@ function Pill({ children }) {
       {children}
     </span>
   );
+  function ProjectLinks({ linksList = [] }) {
+  if (!linksList?.length) return null;
+
+  return (
+    <div className="mt-5 flex flex-wrap gap-3">
+      {linksList.map((link) => (
+        <a
+          key={`${link.label}-${link.href}`}
+          href={link.href}
+          target="_blank"
+          rel="noreferrer"
+          className={`rounded-2xl px-4 py-2 text-sm font-semibold shadow-sm transition-transform duration-200 hover:-translate-y-0.5 ${
+            link.label === "Live"
+              ? "bg-neutral-900 text-white hover:bg-neutral-800"
+              : "border border-neutral-200 bg-white text-neutral-900 hover:bg-neutral-50"
+          }`}
+        >
+          {link.label}
+        </a>
+      ))}
+    </div>
+  );
+}
 }
 
 function Section({ id, title, subtitle, children }) {
