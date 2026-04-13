@@ -9,103 +9,119 @@ const links = {
   resume: "https://drive.google.com/file/d/1HBSDaoyU5EG6Ho7jmzlGSlHqCI4FcJmd/view?usp=sharing",
   portfolioLive: "https://yasogreeshma-portfolio.vercel.app",
   portfolioCode: "https://github.com/greeshmaneelathi/yasogreeshma-portfolio",
-  teamRabbitCode: "https://github.com/greeshmaneelathi/Team-Rabbit",
+  healthcareRagCode: "https://github.com/greeshmaneelathi/healthcare-rag-agent",
+  mathKidsCode: "https://github.com/greeshmaneelathi/Team-Rabbit",
   aiReadmissionCode: "https://github.com/greeshmaneelathi/ai-patient-readmission-predictor",
   logAnomalyCode: "https://github.com/greeshmaneelathi/distributed-log-anomaly-detection",
   realtimeChatCode: "https://github.com/greeshmaneelathi/scalable-realtime-chat",
 };
 
 const stats = [
-  { label: "API performance gain", value: "25%" },
-  { label: "Application performance boost", value: "20%" },
   { label: "Response time reduction", value: "30%" },
   { label: "Regression effort reduced", value: "35%" },
-  { label: "Telemetry scale", value: "Millions" },
-  { label: "Users supported", value: "Enterprise" },
+  { label: "Application performance gain", value: "20%" },
+  { label: "API / backend improvement", value: "25%" },
+  { label: "Systems supported", value: "Enterprise" },
+  { label: "Architecture focus", value: "Scalable" },
 ];
 
 const skills = {
   "Backend Engineering": [
     "C#",
-    ".NET 8",
+    ".NET",
     "ASP.NET Core",
+    "ASP.NET Web API",
     "REST APIs",
-    "Web API",
-    "JSON",
-    "Distributed Services",
+    "Entity Framework Core",
+    "WCF Services",
+    "Azure Functions",
   ],
-  Frontend: ["React", "Blazor", "JavaScript", "TypeScript", "Frontend Components"],
+  Frontend: [
+    "React",
+    "Angular 14",
+    "Blazor",
+    "MVC",
+    "JavaScript",
+    "TypeScript",
+  ],
   Databases: [
     "SQL Server",
     "PostgreSQL",
-    "Relational Databases",
+    "Stored Procedures",
+    "Triggers",
+    "Views",
+    "Indexes",
     "Query Optimization",
   ],
   "Cloud & DevOps": [
-    "CI/CD Pipelines",
     "Azure DevOps",
-    "GitHub",
+    "CI/CD Pipelines",
+    "Azure Logic Apps",
+    "Azure Data Factory",
+    "Azure Storage",
     "Vercel",
-    "Cloud Applications",
+    "Docker",
   ],
-  Tools: ["Git", "Visual Studio", "Postman", "Salesforce CRM"],
-  "Engineering Practices": [
+  Testing: [
+    "API Testing",
+    "Integration Testing",
+    "Regression Testing",
+    "Load Testing",
+    "Selenium",
+    "System Validation",
+  ],
+  Architecture: [
+    "Distributed Systems",
+    "Legacy Modernization",
     "Microservices",
-    "Agile/Scrum",
-    "API Integrations",
-    "Performance Optimization",
-    "Automation Frameworks",
-    "Data Pipelines",
+    "Role-Based Security",
+    "Batch Processing",
+    "Cross-System Integration",
   ],
 };
 
 const experience = [
   {
-    company: "AVEVA",
-    location: "California",
-    role: "Software Engineer",
-    dates: "Jun 2025 – Present",
-    highlights: [
-      "Developed scalable REST APIs using C# and ASP.NET supporting cloud-based telemetry systems processing large real-time data streams.",
-      "Optimized backend services and SQL queries, improving API response performance and system reliability for enterprise applications.",
-      "Designed JSON and XML service contracts enabling reliable communication between distributed backend services.",
-      "Integrated backend services with CI/CD pipelines to improve deployment stability and release automation.",
-    ],
-  },
-  {
     company: "San Bernardino County",
     location: "California",
-    role: "Software Engineer Intern",
-    dates: "Feb 2025 – Apr 2025",
+    role: "Software Engineer",
+    dates: "Feb 2025 – Present",
     highlights: [
-      "Modernized legacy .NET applications and built backend APIs supporting internal government web systems.",
-      "Developed Blazor-based UI components and integrated REST APIs to improve system usability and performance.",
-      "Supported secure application architecture, authentication workflows, and backend service integration.",
-      "Participated in Agile development cycles including sprint planning, testing, and debugging production issues.",
+      "Modernized a legacy, customer-facing platform by enhancing the user interface with Angular and the backend with ASP.NET Web API, significantly improving performance, scalability, and user experience.",
+      "Supported applications used across multiple school districts, contributing to critical workflows including student enrollment, staff management, scheduling, billing, and operational administration.",
+      "Developed and enhanced the Property Information Management System (PIMS) using ASP.NET Core, MVC, Blazor, Angular 14, Entity Framework Core, and Azure Functions to deliver scalable and high-performing application architecture.",
+      "Integrated Azure Logic Apps, Azure Data Factory, and Azure Storage to automate ETL workflows, document routing, and cross-system data synchronization across county platforms.",
+      "Built secure REST and WCF services enabling real-time data exchange between Laserfiche, SQL Server, third-party applications, and internal county systems.",
+      "Led modernization of legacy VB6 and WinForms modules into .NET Core and WPF components, improving maintainability, continuity, and long-term system stability while reducing technical debt.",
+      "Designed and optimized SQL Server schemas, stored procedures, triggers, views, and indexes to support high-performance transactional processing and reliable backend workflows.",
+      "Implemented role-based authentication and authorization in ASP.NET Core using Azure AD and modern identity practices.",
+      "Managed Azure DevOps CI/CD pipelines for automated builds, testing, and deployments across development, staging, and production environments.",
+      "Produced architecture documentation, API specifications, deployment checklists, and training materials while supporting post-deployment operations, batch processing, print management, and end-user adoption.",
     ],
   },
   {
     company: "Tata Consultancy Services",
-    location: "India",
-    role: "Software Engineer in Test",
+    location: "Hyderabad, India",
+    role: "Software Development and Testing",
     dates: "Jan 2020 – Jul 2023",
     highlights: [
-      "Built automation testing frameworks using Java and C++ improving regression stability across distributed financial systems.",
-      "Validated Salesforce CRM workflows and REST API integrations for insurance and banking platforms including Transamerica and Citibank systems.",
-      "Conducted performance and load testing for enterprise financial applications, identifying bottlenecks and improving system reliability.",
-      "Performed SOQL-based data validation to ensure CRM data integrity and reporting accuracy.",
-      "Collaborated with developers in Agile teams to debug issues and support stable production releases.",
+      "Built automation frameworks supporting distributed enterprise systems across financial platforms.",
+      "Conducted load, stress, and endurance testing to analyze application performance under peak traffic conditions.",
+      "Identified architectural bottlenecks and collaborated with backend teams to improve scalability and reliability.",
+      "Supported release validation and production readiness for large-scale systems.",
+      "Validated SQL-backed workflows, CRM integrations, and API-driven business processes across insurance and banking platforms.",
     ],
   },
   {
     company: "Dartin Technologies",
-    location: "India",
-    role: "Jr. Software Engineer",
+    location: "Hyderabad, India",
+    role: "Junior Software Developer",
     dates: "May 2019 – Jan 2020",
     highlights: [
-      "Developed web applications integrating REST APIs and backend services supporting enterprise business systems.",
-      "Implemented SQL queries and database integrations improving application data processing and reliability.",
-      "Debugged backend services and resolved application stability issues in production environments.",
+      "Worked on enterprise web applications built using Java and .NET technologies.",
+      "Validated REST APIs and supported backend verification through SQL queries.",
+      "Contributed to early-stage automation efforts using Selenium and supported CI build validation.",
+      "Participated in defect lifecycle tracking and structured release workflows in Agile environments.",
     ],
   },
 ];
@@ -126,13 +142,24 @@ const projects = [
     ],
   },
   {
+    title: "Healthcare RAG Agent",
+    org: "GitHub Project",
+    tags: ["Python", "RAG", "LLM", "Healthcare", "APIs"],
+    bullets: [
+      "Built a retrieval-augmented generation system for healthcare-focused question answering using document-grounded responses.",
+      "Designed backend workflows for document ingestion, context retrieval, and prompt orchestration across a structured pipeline.",
+      "Focused on reliable information retrieval, modular architecture, and scalable AI-assisted response generation.",
+    ],
+    links: [{ label: "Code", href: links.healthcareRagCode }],
+  },
+  {
     title: "AI-Based Patient Readmission Risk Predictor",
     org: "GitHub Project",
-    tags: ["Python", "scikit-learn", "FastAPI", "Machine Learning", "Healthcare AI"],
+    tags: ["Python", "Machine Learning", "FastAPI", "Healthcare AI"],
     bullets: [
-      "Built a machine learning system to predict 30-day hospital readmission risk using structured healthcare data.",
-      "Designed API-accessible prediction workflows for real-time backend integration using FastAPI.",
-      "Focused on model evaluation, prediction reliability, and practical healthcare decision support workflows.",
+      "Built a machine learning system to predict hospital readmission risk using structured healthcare datasets.",
+      "Developed API-accessible prediction workflows for real-time backend integration.",
+      "Evaluated model performance and supported healthcare decision workflows through predictive analytics.",
     ],
     links: [{ label: "Code", href: links.aiReadmissionCode }],
   },
@@ -141,9 +168,9 @@ const projects = [
     org: "GitHub Project",
     tags: ["Python", "Kafka", "Docker", "Kubernetes", "Distributed Systems"],
     bullets: [
-      "Developed a real-time distributed log analysis system to identify anomalous events across streaming infrastructure.",
-      "Integrated Kafka-based event ingestion with machine learning workflows for scalable anomaly detection.",
-      "Used containerized deployment patterns to support distributed processing and production-style observability use cases.",
+      "Developed a distributed log analysis system to identify anomalous events across streaming infrastructure.",
+      "Integrated event ingestion with machine learning workflows for scalable anomaly detection use cases.",
+      "Used containerized deployment patterns to support observability-oriented distributed processing.",
     ],
     links: [{ label: "Code", href: links.logAnomalyCode }],
   },
@@ -152,14 +179,14 @@ const projects = [
     org: "GitHub Project",
     tags: ["Python", "WebSockets", "Redis", "PostgreSQL", "Docker"],
     bullets: [
-      "Built a full-stack real-time chat system using WebSockets for low-latency bidirectional communication.",
+      "Built a real-time chat application using WebSockets for low-latency bidirectional communication.",
       "Integrated Redis pub/sub for message distribution and PostgreSQL for persistent conversation storage.",
-      "Designed the application for scalability, modular backend processing, and containerized deployment.",
+      "Designed the backend for scalability, modular processing, and containerized deployment.",
     ],
     links: [{ label: "Code", href: links.realtimeChatCode }],
   },
   {
-    title: "Math Kids with Rabbit – Game Development",
+    title: "Math Kids with Rabbit – Mobile Game",
     org: "California State University, San Bernardino",
     tags: ["C++", "Cross-Platform Development", "Performance"],
     bullets: [
@@ -167,47 +194,26 @@ const projects = [
       "Improved frame stability and gameplay responsiveness through rendering and state-management optimizations.",
       "Designed interactive UI elements and gameplay mechanics to enhance user engagement for educational gaming.",
     ],
-    links: [{ label: "Code", href: links.teamRabbitCode }],
+    links: [{ label: "Code", href: links.mathKidsCode }],
   },
 ];
 
 function Pill({ children }) {
   return (
-    <span className="inline-flex items-center rounded-full border border-neutral-200 bg-white px-3 py-1 text-sm text-neutral-700 shadow-sm">
+    <span className="inline-flex items-center rounded-full border border-slate-200 bg-white/75 px-3 py-1 text-sm text-slate-700 shadow-sm backdrop-blur">
       {children}
     </span>
   );
-  function ProjectLinks({ linksList = [] }) {
-  if (!linksList?.length) return null;
-
-  return (
-    <div className="mt-5 flex flex-wrap gap-3">
-      {linksList.map((link) => (
-        <a
-          key={`${link.label}-${link.href}`}
-          href={link.href}
-          target="_blank"
-          rel="noreferrer"
-          className={`rounded-2xl px-4 py-2 text-sm font-semibold shadow-sm transition-transform duration-200 hover:-translate-y-0.5 ${
-            link.label === "Live"
-              ? "bg-neutral-900 text-white hover:bg-neutral-800"
-              : "border border-neutral-200 bg-white text-neutral-900 hover:bg-neutral-50"
-          }`}
-        >
-          {link.label}
-        </a>
-      ))}
-    </div>
-  );
-}
 }
 
 function Section({ id, title, subtitle, children }) {
   return (
-    <section id={id} className="scroll-mt-24">
-      <div className="mb-6">
-        <h2 className="text-2xl font-semibold tracking-tight text-neutral-900">{title}</h2>
-        {subtitle ? <p className="mt-2 max-w-3xl text-neutral-600">{subtitle}</p> : null}
+    <section id={id} className="scroll-mt-28">
+      <div className="mb-8">
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-900 md:text-3xl">
+          {title}
+        </h2>
+        {subtitle ? <p className="mt-2 max-w-3xl text-slate-600">{subtitle}</p> : null}
       </div>
       {children}
     </section>
@@ -225,10 +231,10 @@ function ProjectLinks({ linksList = [] }) {
           href={link.href}
           target="_blank"
           rel="noreferrer"
-          className={`rounded-2xl px-4 py-2 text-sm font-semibold shadow-sm transition-transform duration-200 hover:-translate-y-0.5 ${
+          className={`rounded-2xl px-4 py-2 text-sm font-semibold shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${
             link.label === "Live"
-              ? "bg-neutral-900 text-white hover:bg-neutral-800"
-              : "border border-neutral-200 bg-white text-neutral-900 hover:bg-neutral-50"
+              ? "bg-gradient-to-r from-blue-600 via-violet-600 to-fuchsia-500 text-white hover:from-blue-700 hover:via-violet-700 hover:to-fuchsia-600"
+              : "border border-slate-200 bg-white text-slate-900 hover:bg-slate-50"
           }`}
         >
           {link.label}
@@ -239,25 +245,25 @@ function ProjectLinks({ linksList = [] }) {
 }
 
 const fadeUp = {
-  hidden: { opacity: 0, y: 22 },
+  hidden: { opacity: 0, y: 24 },
   show: { opacity: 1, y: 0 },
 };
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-neutral-50 text-neutral-900">
-      <header className="sticky top-0 z-50 border-b border-neutral-200 bg-white/80 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-          <a href="#top" className="font-semibold tracking-tight">
+    <div className="min-h-screen bg-slate-50 text-slate-900">
+      <header className="sticky top-0 z-50 border-b border-white/20 bg-white/60 backdrop-blur-xl">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
+          <a href="#top" className="font-semibold tracking-tight text-slate-900">
             Yaso Greeshma Neelathi
           </a>
 
-          <nav className="hidden gap-6 text-sm text-neutral-600 md:flex">
-            <a className="hover:text-neutral-900" href="#about">About</a>
-            <a className="hover:text-neutral-900" href="#skills">Skills</a>
-            <a className="hover:text-neutral-900" href="#experience">Experience</a>
-            <a className="hover:text-neutral-900" href="#projects">Projects</a>
-            <a className="hover:text-neutral-900" href="#contact">Contact</a>
+          <nav className="hidden gap-7 text-sm text-slate-600 lg:flex">
+            <a className="transition hover:text-slate-900" href="#about">About</a>
+            <a className="transition hover:text-slate-900" href="#skills">Skills</a>
+            <a className="transition hover:text-slate-900" href="#experience">Experience</a>
+            <a className="transition hover:text-slate-900" href="#projects">Projects</a>
+            <a className="transition hover:text-slate-900" href="#contact">Contact</a>
           </nav>
 
           <div className="flex items-center gap-2">
@@ -265,7 +271,7 @@ export default function App() {
               href={links.resume}
               target="_blank"
               rel="noreferrer"
-              className="hidden rounded-xl bg-neutral-900 px-3 py-2 text-sm font-medium text-white shadow-sm hover:bg-neutral-800 md:inline-flex transition-transform duration-200 hover:-translate-y-0.5"
+              className="hidden rounded-xl bg-gradient-to-r from-blue-600 via-violet-600 to-fuchsia-500 px-3 py-2 text-sm font-medium text-white shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl md:inline-flex"
             >
               Resume
             </a>
@@ -274,7 +280,7 @@ export default function App() {
               href={links.linkedin}
               target="_blank"
               rel="noreferrer"
-              className="rounded-xl border border-neutral-200 bg-white px-3 py-2 text-sm font-medium text-neutral-800 shadow-sm hover:bg-neutral-50 transition-transform duration-200 hover:-translate-y-0.5"
+              className="rounded-xl border border-slate-200 bg-white/80 px-3 py-2 text-sm font-medium text-slate-800 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-white"
             >
               LinkedIn
             </a>
@@ -283,7 +289,7 @@ export default function App() {
               href={links.github}
               target="_blank"
               rel="noreferrer"
-              className="rounded-xl border border-neutral-200 bg-white px-3 py-2 text-sm font-medium text-neutral-800 shadow-sm hover:bg-neutral-50 transition-transform duration-200 hover:-translate-y-0.5"
+              className="rounded-xl border border-slate-200 bg-white/80 px-3 py-2 text-sm font-medium text-slate-800 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-white"
             >
               GitHub
             </a>
@@ -291,15 +297,15 @@ export default function App() {
         </div>
       </header>
 
-      <main id="top" className="mx-auto max-w-6xl px-4">
-        <div className="grid gap-10 py-16 md:grid-cols-12 md:items-center">
-          <div className="md:col-span-7">
+      <main id="top" className="mx-auto max-w-7xl px-4">
+        <div className="grid gap-12 py-16 lg:grid-cols-12 lg:items-center lg:py-24">
+          <div className="lg:col-span-7">
             <motion.div
               variants={fadeUp}
               initial="hidden"
               animate="show"
               transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-sm text-neutral-700 shadow-sm"
+              className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/75 px-3 py-1 text-sm text-slate-700 shadow-sm backdrop-blur"
             >
               <span className="h-2 w-2 rounded-full bg-emerald-500" />
               Open to Software Engineer · Backend Engineer · Full Stack Engineer
@@ -309,37 +315,37 @@ export default function App() {
               initial={{ opacity: 0, y: 34 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.08 }}
-              className="mt-5 text-4xl font-bold tracking-tight md:text-6xl"
+              className="mt-6 bg-gradient-to-r from-blue-700 via-violet-600 to-fuchsia-500 bg-clip-text text-4xl font-bold tracking-tight text-transparent md:text-6xl xl:text-7xl"
             >
-              Building scalable APIs, modern web applications, and reliable backend systems.
+              Building scalable APIs, modern applications, and high-impact software systems.
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="mt-5 max-w-2xl text-lg leading-relaxed text-neutral-600"
+              className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600"
             >
-              Software Engineer focused on C#, .NET, React, REST APIs, SQL systems, and cloud-based application delivery.
-              I build performant backend services, modernize legacy platforms, and create production-ready software that improves reliability, speed, and developer efficiency.
+              Software Engineer focused on backend architecture, platform modernization, cloud-integrated systems, and production-ready application delivery.
+              I build maintainable software with strong foundations in .NET, Angular, Blazor, REST services, SQL optimization, and CI/CD automation.
             </motion.p>
 
             <motion.div
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.35 }}
-              className="mt-7 flex flex-wrap gap-3"
+              className="mt-8 flex flex-wrap gap-3"
             >
               <a
                 href="#projects"
-                className="rounded-2xl bg-neutral-900 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-neutral-800 transition-transform duration-200 hover:-translate-y-0.5"
+                className="rounded-2xl bg-gradient-to-r from-blue-600 via-violet-600 to-fuchsia-500 px-5 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
               >
                 View Projects
               </a>
 
               <a
                 href="#experience"
-                className="rounded-2xl border border-neutral-200 bg-white px-5 py-3 text-sm font-semibold text-neutral-900 shadow-sm hover:bg-neutral-50 transition-transform duration-200 hover:-translate-y-0.5"
+                className="rounded-2xl border border-slate-200 bg-white/80 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-lg"
               >
                 Experience
               </a>
@@ -348,7 +354,7 @@ export default function App() {
                 href={links.resume}
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-2xl border border-neutral-200 bg-white px-5 py-3 text-sm font-semibold text-neutral-900 shadow-sm hover:bg-neutral-50 transition-transform duration-200 hover:-translate-y-0.5"
+                className="rounded-2xl border border-slate-200 bg-white/80 px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-lg"
               >
                 Download Resume
               </a>
@@ -360,42 +366,49 @@ export default function App() {
               transition={{ duration: 0.55, delay: 0.48 }}
               className="mt-6 flex flex-wrap gap-2"
             >
-              {["C#", ".NET", "React", "REST APIs", "SQL Server", "PostgreSQL", "CI/CD"].map((item) => (
+              {["C#", ".NET", "Angular", "Blazor", "REST APIs", "SQL Server", "Azure DevOps"].map((item) => (
                 <Pill key={item}>{item}</Pill>
               ))}
             </motion.div>
           </div>
 
-          <div className="md:col-span-5">
+          <div className="lg:col-span-5">
             <motion.div
               initial={{ opacity: 0, y: 26 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.65, delay: 0.18 }}
-              className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm"
+              className="rounded-[28px] border border-white/30 bg-white/70 p-6 shadow-2xl backdrop-blur-xl"
             >
-              <h3 className="text-base font-semibold">Impact snapshot</h3>
+              <div className="flex items-center justify-between">
+                <h3 className="text-base font-semibold">Impact snapshot</h3>
+                <span className="rounded-full bg-gradient-to-r from-blue-100 to-violet-100 px-3 py-1 text-xs font-medium text-slate-700">
+                  Metrics-first
+                </span>
+              </div>
 
-              <div className="mt-4 grid grid-cols-2 gap-3">
+              <div className="mt-5 grid grid-cols-2 gap-3">
                 {stats.map((stat) => (
                   <motion.div
                     key={stat.label}
-                    whileHover={{ y: -4 }}
+                    whileHover={{ y: -4, scale: 1.02 }}
                     transition={{ duration: 0.18 }}
-                    className="rounded-2xl border border-neutral-200 bg-neutral-50 p-4"
+                    className="rounded-2xl border border-slate-200 bg-gradient-to-br from-blue-50 via-violet-50 to-pink-50 p-4"
                   >
-                    <div className="text-2xl font-semibold tracking-tight">{stat.value}</div>
-                    <div className="mt-1 text-sm text-neutral-600">{stat.label}</div>
+                    <div className="text-2xl font-semibold tracking-tight text-slate-900">
+                      {stat.value}
+                    </div>
+                    <div className="mt-1 text-sm text-slate-600">{stat.label}</div>
                   </motion.div>
                 ))}
               </div>
 
-              <div className="mt-5 rounded-2xl bg-neutral-900 p-4 text-white">
-                <div className="text-sm font-semibold">What I bring</div>
+              <div className="mt-5 rounded-2xl bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 p-4 text-white">
+                <div className="text-sm font-semibold">Engineering strengths</div>
                 <div className="mt-2 flex flex-wrap gap-2 text-sm">
-                  <span className="rounded-full bg-white/10 px-3 py-1">Backend APIs</span>
-                  <span className="rounded-full bg-white/10 px-3 py-1">System modernization</span>
-                  <span className="rounded-full bg-white/10 px-3 py-1">Cloud delivery</span>
-                  <span className="rounded-full bg-white/10 px-3 py-1">Performance optimization</span>
+                  <span className="rounded-full bg-white/10 px-3 py-1">Platform modernization</span>
+                  <span className="rounded-full bg-white/10 px-3 py-1">Backend architecture</span>
+                  <span className="rounded-full bg-white/10 px-3 py-1">Cloud workflows</span>
+                  <span className="rounded-full bg-white/10 px-3 py-1">Performance tuning</span>
                 </div>
               </div>
             </motion.div>
@@ -406,29 +419,30 @@ export default function App() {
           <Section
             id="about"
             title="About"
-            subtitle="Software engineering across enterprise systems, cloud applications, and production-ready backend services."
+            subtitle="Engineering scalable systems across web applications, enterprise workflows, backend services, and modernized platforms."
           >
             <motion.div
               initial={{ opacity: 0, y: 18 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.25 }}
               transition={{ duration: 0.55 }}
-              className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm"
+              className="rounded-[28px] border border-white/30 bg-white/70 p-6 shadow-2xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-1"
             >
-              <p className="leading-relaxed text-neutral-700">
-                I build software at the intersection of backend engineering, modern web development, and scalable system design.
-                My work includes creating REST APIs, modernizing legacy applications, integrating cloud-based deployment pipelines,
-                improving database performance, and delivering reliable application experiences across enterprise and government systems.
+              <p className="leading-relaxed text-slate-700">
+                I work across backend engineering, application modernization, and scalable software delivery.
+                My experience includes modernizing legacy systems, building secure APIs, integrating cloud workflows,
+                optimizing SQL performance, and delivering enterprise applications used in real operational environments.
+                I enjoy taking complex, aging systems and turning them into reliable, maintainable, modern software platforms.
               </p>
 
               <div className="mt-4 flex flex-wrap gap-2">
                 <Pill>ASP.NET Core</Pill>
-                <Pill>Web APIs</Pill>
+                <Pill>Angular 14</Pill>
                 <Pill>Blazor</Pill>
-                <Pill>React</Pill>
-                <Pill>SQL Optimization</Pill>
-                <Pill>Azure DevOps</Pill>
-                <Pill>Microservices</Pill>
+                <Pill>Entity Framework Core</Pill>
+                <Pill>Azure Functions</Pill>
+                <Pill>SQL Server</Pill>
+                <Pill>WCF</Pill>
               </div>
             </motion.div>
           </Section>
@@ -444,7 +458,7 @@ export default function App() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.2 }}
                   transition={{ duration: 0.55 }}
-                  className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm"
+                  className="rounded-[28px] border border-white/30 bg-white/70 p-6 shadow-2xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-1"
                 >
                   <h3 className="text-base font-semibold">{group}</h3>
                   <div className="mt-3 flex flex-wrap gap-2">
@@ -468,19 +482,19 @@ export default function App() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.2 }}
                   transition={{ duration: 0.55 }}
-                  className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm"
+                  className="rounded-[28px] border border-white/30 bg-white/70 p-6 shadow-2xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-1"
                 >
                   <div className="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
                     <div>
                       <h3 className="text-lg font-semibold tracking-tight">{job.role}</h3>
-                      <div className="mt-1 text-sm text-neutral-600">
-                        <span className="font-medium text-neutral-800">{job.company}</span> · {job.location}
+                      <div className="mt-1 text-sm text-slate-600">
+                        <span className="font-medium text-slate-800">{job.company}</span> · {job.location}
                       </div>
                     </div>
-                    <div className="text-sm text-neutral-600 md:text-right">{job.dates}</div>
+                    <div className="text-sm text-slate-600 md:text-right">{job.dates}</div>
                   </div>
 
-                  <ul className="mt-4 list-disc space-y-2 pl-5 text-neutral-700">
+                  <ul className="mt-4 list-disc space-y-2 pl-5 text-slate-700">
                     {job.highlights.map((highlight, idx) => (
                       <li key={idx}>{highlight}</li>
                     ))}
@@ -502,12 +516,12 @@ export default function App() {
                   viewport={{ once: true, amount: 0.2 }}
                   transition={{ duration: 0.55 }}
                   whileHover={{ y: -6 }}
-                  className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm"
+                  className="rounded-[28px] border border-white/30 bg-white/70 p-6 shadow-2xl backdrop-blur-xl transition-all duration-300"
                 >
                   <div className="flex items-start justify-between gap-4">
                     <div>
                       <h3 className="text-lg font-semibold tracking-tight">{project.title}</h3>
-                      <p className="mt-1 text-sm text-neutral-600">{project.org}</p>
+                      <p className="mt-1 text-sm text-slate-600">{project.org}</p>
                     </div>
 
                     <div className="hidden flex-wrap justify-end gap-2 md:flex">
@@ -523,7 +537,7 @@ export default function App() {
                     ))}
                   </div>
 
-                  <ul className="mt-4 list-disc space-y-2 pl-5 text-neutral-700">
+                  <ul className="mt-4 list-disc space-y-2 pl-5 text-slate-700">
                     {project.bullets.map((bullet, idx) => (
                       <li key={idx}>{bullet}</li>
                     ))}
@@ -540,23 +554,23 @@ export default function App() {
           <Section
             id="contact"
             title="Contact"
-            subtitle="Open to software engineering opportunities across backend systems, full-stack applications, and cloud-native platforms."
+            subtitle="Open to software engineering opportunities across backend systems, full-stack applications, platform engineering, and cloud-native systems."
           >
             <motion.div
               initial={{ opacity: 0, y: 18 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.55 }}
-              className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm"
+              className="rounded-[28px] border border-white/30 bg-white/70 p-6 shadow-2xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-1"
             >
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-                <a href={links.email} className="rounded-2xl border border-neutral-200 bg-neutral-50 p-4 hover:bg-neutral-100 transition">
-                  <div className="text-sm text-neutral-600">Email</div>
+                <a href={links.email} className="rounded-2xl border border-slate-200 bg-slate-50/80 p-4 transition hover:bg-white">
+                  <div className="text-sm text-slate-600">Email</div>
                   <div className="mt-1 font-semibold">yneelathi0511@gmail.com</div>
                 </a>
 
-                <a href={links.phone} className="rounded-2xl border border-neutral-200 bg-neutral-50 p-4 hover:bg-neutral-100 transition">
-                  <div className="text-sm text-neutral-600">Phone</div>
+                <a href={links.phone} className="rounded-2xl border border-slate-200 bg-slate-50/80 p-4 transition hover:bg-white">
+                  <div className="text-sm text-slate-600">Phone</div>
                   <div className="mt-1 font-semibold">+1 909-380-6984</div>
                 </a>
 
@@ -564,9 +578,9 @@ export default function App() {
                   href={links.linkedin}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-2xl border border-neutral-200 bg-neutral-50 p-4 hover:bg-neutral-100 transition"
+                  className="rounded-2xl border border-slate-200 bg-slate-50/80 p-4 transition hover:bg-white"
                 >
-                  <div className="text-sm text-neutral-600">LinkedIn</div>
+                  <div className="text-sm text-slate-600">LinkedIn</div>
                   <div className="mt-1 font-semibold">Open profile</div>
                 </a>
 
@@ -574,32 +588,32 @@ export default function App() {
                   href={links.github}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-2xl border border-neutral-200 bg-neutral-50 p-4 hover:bg-neutral-100 transition"
+                  className="rounded-2xl border border-slate-200 bg-slate-50/80 p-4 transition hover:bg-white"
                 >
-                  <div className="text-sm text-neutral-600">GitHub</div>
+                  <div className="text-sm text-slate-600">GitHub</div>
                   <div className="mt-1 font-semibold">View repos</div>
                 </a>
               </div>
 
-              <div className="mt-6 rounded-2xl bg-neutral-900 p-5 text-white">
+              <div className="mt-6 rounded-2xl bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 p-5 text-white">
                 <div className="text-sm font-semibold">Current focus</div>
                 <p className="mt-2 text-sm leading-relaxed text-white/90">
-                  Building production-ready software with strong foundations in backend APIs, cloud deployment, modern frontend integration, and performance-aware engineering.
+                  Building production-ready software with strong foundations in backend APIs, system modernization, cloud workflows, SQL optimization, and maintainable application architecture.
                 </p>
               </div>
             </motion.div>
           </Section>
         </div>
 
-        <footer className="pb-14 pt-4 text-sm text-neutral-500">
-          <div className="border-t border-neutral-200 pt-6">
+        <footer className="pb-14 pt-4 text-sm text-slate-500">
+          <div className="border-t border-slate-200 pt-6">
             <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
               <div>© {new Date().getFullYear()} Yaso Greeshma Neelathi</div>
               <div className="flex flex-wrap gap-4">
-                <a className="hover:text-neutral-800" href={links.email}>Email</a>
-                <a className="hover:text-neutral-800" href={links.phone}>Phone</a>
-                <a className="hover:text-neutral-800" href={links.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
-                <a className="hover:text-neutral-800" href={links.github} target="_blank" rel="noreferrer">GitHub</a>
+                <a className="hover:text-slate-800" href={links.email}>Email</a>
+                <a className="hover:text-slate-800" href={links.phone}>Phone</a>
+                <a className="hover:text-slate-800" href={links.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
+                <a className="hover:text-slate-800" href={links.github} target="_blank" rel="noreferrer">GitHub</a>
               </div>
             </div>
           </div>
