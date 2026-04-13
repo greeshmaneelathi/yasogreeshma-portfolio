@@ -200,7 +200,7 @@ const projects = [
 
 function Pill({ children }) {
   return (
-    <span className="inline-flex items-center rounded-full border border-slate-200 bg-white/75 px-3 py-1 text-sm text-slate-700 shadow-sm backdrop-blur">
+    <span className="inline-flex items-center rounded-full border border-slate-200/80 bg-white/80 px-3 py-1 text-sm text-slate-700 shadow-sm backdrop-blur">
       {children}
     </span>
   );
@@ -234,7 +234,7 @@ function ProjectLinks({ linksList = [] }) {
           className={`rounded-2xl px-4 py-2 text-sm font-semibold shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${
             link.label === "Live"
               ? "bg-gradient-to-r from-blue-600 via-violet-600 to-fuchsia-500 text-white hover:from-blue-700 hover:via-violet-700 hover:to-fuchsia-600"
-              : "border border-slate-200 bg-white text-slate-900 hover:bg-slate-50"
+              : "border border-slate-200 bg-white/85 text-slate-900 hover:bg-white"
           }`}
         >
           {link.label}
@@ -245,14 +245,29 @@ function ProjectLinks({ linksList = [] }) {
 }
 
 const fadeUp = {
-  hidden: { opacity: 0, y: 24 },
+  hidden: { opacity: 0, y: 28 },
   show: { opacity: 1, y: 0 },
+};
+
+const staggerContainer = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.08,
+    },
+  },
 };
 
 export default function App() {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
-      <header className="sticky top-0 z-50 border-b border-white/20 bg-white/60 backdrop-blur-xl">
+      <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+        <div className="absolute left-[-10rem] top-[-6rem] h-[26rem] w-[26rem] rounded-full bg-blue-400/20 blur-3xl" />
+        <div className="absolute right-[-8rem] top-[4rem] h-[24rem] w-[24rem] rounded-full bg-violet-400/20 blur-3xl" />
+        <div className="absolute bottom-[-10rem] left-[25%] h-[24rem] w-[24rem] rounded-full bg-pink-400/15 blur-3xl" />
+      </div>
+
+      <header className="sticky top-0 z-50 border-b border-white/20 bg-white/55 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
           <a href="#top" className="font-semibold tracking-tight text-slate-900">
             Yaso Greeshma Neelathi
@@ -307,14 +322,14 @@ export default function App() {
               transition={{ duration: 0.5 }}
               className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/75 px-3 py-1 text-sm text-slate-700 shadow-sm backdrop-blur"
             >
-              <span className="h-2 w-2 rounded-full bg-emerald-500" />
+              <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
               Open to Software Engineer · Backend Engineer · Full Stack Engineer
             </motion.div>
 
             <motion.h1
               initial={{ opacity: 0, y: 34 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.08 }}
+              transition={{ duration: 0.65, delay: 0.08 }}
               className="mt-6 bg-gradient-to-r from-blue-700 via-violet-600 to-fuchsia-500 bg-clip-text text-4xl font-bold tracking-tight text-transparent md:text-6xl xl:text-7xl"
             >
               Building scalable APIs, modern applications, and high-impact software systems.
@@ -361,13 +376,15 @@ export default function App() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 14 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.55, delay: 0.48 }}
+              variants={staggerContainer}
+              initial="hidden"
+              animate="show"
               className="mt-6 flex flex-wrap gap-2"
             >
               {["C#", ".NET", "Angular", "Blazor", "REST APIs", "SQL Server", "Azure DevOps"].map((item) => (
-                <Pill key={item}>{item}</Pill>
+                <motion.div key={item} variants={fadeUp}>
+                  <Pill>{item}</Pill>
+                </motion.div>
               ))}
             </motion.div>
           </div>

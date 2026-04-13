@@ -1,7 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background:
     radial-gradient(circle at 15% 20%, rgba(59, 130, 246, 0.18), transparent 28%),
     radial-gradient(circle at 85% 10%, rgba(168, 85, 247, 0.16), transparent 30%),
     radial-gradient(circle at 50% 85%, rgba(236, 72, 153, 0.10), transparent 26%),
     #f8fafc;
+  color: #0f172a;
+}
+
+::selection {
+  background: rgba(99, 102, 241, 0.2);
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
 }
